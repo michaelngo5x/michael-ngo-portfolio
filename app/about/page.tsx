@@ -7,11 +7,11 @@ export const metadata: Metadata = {
 };
 
 const anime = [
-  ["01", "Cowboy Bebop", "Style, melancholy, jazz, and the occasional reminder that whatever happens, happens."],
-  ["02", "Blue Lock", "An aggressively dramatic argument for ego, competition, and scoring the goal yourself."],
-  ["03", "Death Note", "A perfectly reasonable story about what happens when smart people refuse to log off."],
-  ["04", "The Dangers in My Heart", "Quietly one of the sweetest character-growth stories I have watched."],
-  ["05", "SPY x FAMILY", "Found family, secret identities, and Anya carrying the entire operation."],
+  { rank: "01", time: "11:00 PM", title: "Cowboy Bebop", image: "/images/anime/cowboy-bebop.png", note: "Style, melancholy, jazz, and the occasional reminder that whatever happens, happens." },
+  { rank: "02", time: "11:30 PM", title: "Blue Lock", image: "/images/anime/blue-lock.png", note: "An aggressively dramatic argument for ego, competition, and scoring the goal yourself." },
+  { rank: "03", time: "12:00 AM", title: "Death Note", image: "/images/anime/death-note.png", note: "A perfectly reasonable story about what happens when smart people refuse to log off." },
+  { rank: "04", time: "12:30 AM", title: "Dragon Ball Z", image: "/images/anime/dragon-ball-z.png", note: "The foundational text for yelling, powering up, and refusing to accept that the fight is over." },
+  { rank: "05", time: "1:00 AM", title: "Haikyu!!", image: "/images/anime/haikyu.png", note: "The best argument that teamwork, timing, and being relentlessly loud can solve almost anything." },
 ];
 
 export default function AboutPage() {
@@ -46,7 +46,12 @@ export default function AboutPage() {
 
     <section className="personal-favorites">
       <div className="personal-section-heading"><div><p className="eyebrow">Extremely important credentials</p><h2>Top five anime.</h2></div><p>This ranking is authoritative, permanent, and absolutely not subject to change the next time I watch something good.</p></div>
-      <ol className="anime-ranking">{anime.map(([n,title,note])=><li key={title}><span>{n}</span><div><h3>{title}</h3><p>{note}</p></div></li>)}</ol>
+      <div className="anime-broadcast-bar"><span>Saturday night lineup</span><strong>Michael&apos;s Top Five</strong><span>All times extremely approximate</span></div>
+      <ol className="anime-ranking">{anime.map((show)=><li key={show.title}>
+        <div className="anime-slot"><span>{show.rank}</span><time>{show.time}</time></div>
+        <div className="anime-art"><img src={show.image} alt={`${show.title} artwork`}/></div>
+        <div className="anime-copy"><small>Now ranking</small><h3>{show.title}</h3><p>{show.note}</p></div>
+      </li>)}</ol>
     </section>
 
     <section className="personal-field-notes">
@@ -58,6 +63,8 @@ export default function AboutPage() {
         <article><span>🐠</span><small>Preferred decompression method</small><h3>Fish-tank time.</h3><p>I can sit beside an aquarium for hours doing absolutely nothing. This may be the only part of my life that has no tracker.</p></article>
         <article><span>🏛️</span><small>Ideal day out</small><h3>Museums and aquariums.</h3><p>Give me a quiet afternoon, something unexpectedly fascinating, and enough time to read every sign.</p></article>
         <article><span>🦸</span><small>Unaccredited subject expertise</small><h3>Basically every superhero movie.</h3><p>I have seen enough of them to recognize that “we should assemble a team” is rarely followed by a simple implementation plan.</p></article>
+        <article className="pokemon-card"><span>⚡</span><small>Ongoing field research</small><h3>Still playing Pokémon GO.</h3><p>A perfectly normal reason to take the long way home, inspect every nearby park, and briefly care very much about what is spawning across the street.</p></article>
+        <article className="rewatch-card"><span>📺</span><small>Permanent rerun schedule</small><h3>Comfort-show rotation.</h3><p>Smallville, The Simpsons, Futurama, and The Office. I have rewatched all four far too many times and will almost certainly do it again.</p></article>
       </div>
     </section>
 
