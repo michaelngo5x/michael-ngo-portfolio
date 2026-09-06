@@ -36,7 +36,6 @@ const documents = [
     summary: "I translated the solicitation into a structured decision tool covering requirements, deadlines, compliance, operational feasibility, risk, and bid strategy.",
     focus: ["Conditional-pursue recommendation", "Moderate-high risk profile", "Compliance matrix", "Clarification and action register"],
     href: "/downloads/Michael-Ngo-RFP-Procurement-Analysis-Portfolio-Sample.docx",
-    featured: true,
   },
   {
     step: "04",
@@ -45,8 +44,9 @@ const documents = [
     image: "/images/qta-case-study/proposal-cover.webp",
     alt: "Cover of the fictional Northstar Facility Partners technical proposal",
     summary: "The final response converts the analysis into a coherent operating solution with staffing, mobilization, quality, safety, reporting, and compliance commitments.",
-    focus: ["18-page technical response", "45-day mobilization", "Critical-post coverage", "Addendum fully incorporated"],
+    focus: ["Evaluator-focused response", "45-day mobilization", "Critical-post coverage", "Addendum fully incorporated"],
     href: "/downloads/Northstar-Facility-Partners-Fictional-Proposal-QTA-26-117.docx",
+    featured: true,
   },
 ];
 
