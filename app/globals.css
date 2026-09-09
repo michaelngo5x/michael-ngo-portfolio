@@ -25,6 +25,33 @@
 .dashboard-toolbar label{background:#e7f0ff;border:1px solid #9bbcf2;border-radius:9px;padding:5px 5px 5px 13px;box-shadow:0 5px 16px #2b6ed21f}.selector-cue{display:flex;align-items:center;gap:7px;color:#1d5fbe;font-size:8px;letter-spacing:.12em}.selector-cue b{font-size:17px;line-height:1;animation:selector-nudge 1.5s ease-in-out infinite}.selector-label{color:#334d70}.dashboard-toolbar select{background-color:var(--blue);border-color:var(--blue);color:#fff;font-size:11px;font-weight:800;box-shadow:0 4px 10px #2b6ed238;min-width:132px}.dashboard-toolbar select:hover,.dashboard-toolbar select:focus{background-color:#195bbd;border-color:#195bbd;outline:3px solid #93b8f455}.dashboard-toolbar select option{background:#fff;color:var(--ink)}
 @keyframes selector-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
 @media(prefers-reduced-motion:reduce){.selector-cue b{animation:none}}
+
+/* Bid Desk Arcade feature */
+.arcade-project{margin-top:24px;padding:clamp(30px,5vw,64px);display:grid;grid-template-columns:.9fr 1.1fr;gap:7vw;align-items:center;border-radius:18px;overflow:hidden;background:#07182c;color:#fff}
+.arcade-copy .arcade-label{margin:25px 0 8px;color:#72d8df;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.arcade-copy h3{margin:0 0 22px;font-size:clamp(44px,5vw,70px);line-height:.95;letter-spacing:-.045em}
+.arcade-copy>p:not(.arcade-label){max-width:570px;color:#c0cad6;line-height:1.75}
+.arcade-copy ul{margin:28px 0;padding:0;list-style:none}
+.arcade-copy li{padding:9px 0;border-bottom:1px solid #ffffff1a;color:#dbe2ea;font-size:13px}
+.arcade-copy li:before{content:"✓";margin-right:10px;color:#ffd64a}
+.arcade-cta{background:#ffd64a;color:#10243d}
+.arcade-note{color:#9eabb9;font-size:11px}
+.arcade-preview{padding:20px;border:2px solid #263b5a;border-radius:14px;background:#121f35;box-shadow:16px 18px 0 #2e7bff33;transform:rotate(1deg)}
+.arcade-preview-top{display:flex;align-items:center;gap:9px;padding-bottom:14px;border-bottom:1px solid #ffffff22;font-size:9px;font-weight:700;letter-spacing:.09em}
+.arcade-preview-top b{display:grid;width:27px;height:27px;place-items:center;border-radius:6px;background:#2e7bff;font-size:8px}
+.arcade-preview-top small{margin-left:auto;color:#ffd64a}
+.arcade-preview-title{padding:30px 15px 25px}
+.arcade-preview-title small{display:block;margin-bottom:8px;color:#72d8df;font-size:8px;font-weight:700;letter-spacing:.13em}
+.arcade-preview-title strong{font-size:clamp(39px,5vw,67px);line-height:.79;letter-spacing:-.04em}
+.arcade-preview-title em{color:#ffd64a;font-style:normal}
+.arcade-preview-games{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.arcade-preview-games>span{display:flex;min-height:67px;align-items:center;justify-content:center;flex-direction:column;border:1px solid #ffffff27;border-radius:6px;color:#738096;font-family:Georgia,serif;font-size:19px}
+.arcade-preview-games>span.active{border-color:#ffd64a;background:#2e7bff;color:#fff}
+.arcade-preview-games small{margin-top:7px;font-family:Arial,sans-serif;font-size:6px;letter-spacing:.1em}
+.arcade-preview-foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px;color:#ffd64a;font-size:8px;font-weight:700;letter-spacing:.12em}
+.arcade-preview-foot i{color:#e4544f;font-style:normal}
+@media(max-width:980px){.arcade-project{grid-template-columns:1fr}.arcade-preview{max-width:640px}}
+@media(max-width:620px){.arcade-project{padding:28px}.arcade-copy .actions{align-items:flex-start;flex-direction:column}.arcade-preview{padding:14px;transform:none}.arcade-preview-title{padding:24px 8px}.arcade-preview-games{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.dashboard-toolbar label{display:grid;grid-template-columns:1fr auto;gap:5px 12px}.selector-cue{grid-column:1/-1}.selector-label{align-self:center}.dashboard-toolbar select{min-width:150px}}
 
 /* Credentials portfolio */
