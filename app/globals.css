@@ -129,3 +129,21 @@
 .comparison-carousel .qa-node,.comparison-carousel .hierarchy-graphic div{border-color:var(--slide-accent)}
 .comparison-carousel .carousel-dots button{border-color:var(--slide-accent)}
 .comparison-carousel .carousel-dots button.active{background:var(--slide-accent)}
+
+/* About Me: Anime ranking label spacing */
+.personal-about-page .anime-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.personal-about-page .anime-slot span {
+  display: inline-block;
+}
+
+.personal-about-page .anime-slot time {
+  display: inline-block;
+  white-space: nowrap;
+}
+
