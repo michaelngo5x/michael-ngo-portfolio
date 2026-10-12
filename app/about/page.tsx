@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const anime = [
   { rank: "01", time: "11:00 PM", title: "Cowboy Bebop", image: "/images/anime/cowboy-bebop.png", note: "Style, melancholy, jazz, and the occasional reminder that whatever happens, happens." },
-  { rank: "02", time: "11:30 PM", title: "Blue Lock", image: "/images/anime/Blue-lock.png", note: "An aggressively dramatic argument for ego, competition, and scoring the goal yourself." },
+  { rank: "02", time: "11:30 PM", title: "Blue Lock", image: "/images/anime/blue-lock.png", note: "An aggressively dramatic argument for ego, competition, and scoring the goal yourself." },
   { rank: "03", time: "12:00 AM", title: "Death Note", image: "/images/anime/death-note.png", note: "A perfectly reasonable story about what happens when smart people refuse to log off." },
   { rank: "04", time: "12:30 AM", title: "Dragon Ball Z", image: "/images/anime/dragon-ball-z.png", note: "The foundational text for yelling, powering up, and refusing to accept that the fight is over." },
   { rank: "05", time: "1:00 AM", title: "Haikyu!!", image: "/images/anime/haikyu.png", note: "The best argument that teamwork, timing, and being relentlessly loud can solve almost anything." },
