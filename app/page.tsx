@@ -474,43 +474,27 @@ function WorkSamplePreview() {
     </div>
   );
 }
+
 function ArcadePreview() {
   return (
-    <div className="arcade-preview" aria-label="Preview of the Bid Desk Arcade">
-      <div className="arcade-preview-top">
-        <b>MN</b>
-        <span>BID DESK ARCADE</span>
-        <small>01 / 04</small>
-      </div>
-      <div className="arcade-preview-title">
-        <small>OPPORTUNITY EVALUATION</small>
-        <strong>
-          IT’S A
-          <br />
-          <em>BID!</em>
-        </strong>
-      </div>
-      <div className="arcade-preview-games">
-        <span className="active">
-          01<small>PLAY</small>
-        </span>
-        <span>
-          02<small>LOCKED</small>
-        </span>
-        <span>
-          03<small>LOCKED</small>
-        </span>
-        <span>
-          04<small>LOCKED</small>
-        </span>
-      </div>
-      <div className="arcade-preview-foot">
-        <span>PLAY THE BID PROCESS.</span>
-        <i>●</i>
-      </div>
+    <div
+      className="arcade-preview"
+      aria-label="Preview of the Bid Desk Arcade"
+    >
+      <img
+        src="/images/bid-arcade-preview.png"
+        alt="Bid Desk Arcade featuring It's a Bid, Red Flag Hunt, Scope Creep, and Capacity Crunch"
+        style={{
+          display: "block",
+          width: "100%",
+          height: "auto",
+          borderRadius: "12px",
+        }}
+      />
     </div>
   );
 }
+
 function DocumentCard({
   step,
   type,
