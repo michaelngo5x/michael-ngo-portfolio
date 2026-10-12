@@ -169,19 +169,20 @@ export default function Home() {
         <article className="arcade-project" id="arcade">
           <div className="arcade-copy">
             <span className="flag">Interactive learning experience</span>
-            <p className="arcade-label">Bid Desk Arcade · Game 01</p>
-            <h3>It’s a Bid!</h3>
-            <p>
-              Five fictional opportunities. Three possible recommendations. One
-              question: can you separate a promising pursuit from an expensive
-              distraction?
-            </p>
-            <ul>
-              <li>Bid, No-Bid, or Need More Info</li>
-              <li>Immediate decision feedback</li>
-              <li>Eligibility and qualification hard stops</li>
-              <li>A final Bid Desk Judgment score</li>
-            </ul>
+           <p className="arcade-label">Bid Desk Arcade · Four Interactive Games</p>
+<h3>Pick a Mini-Game.</h3>
+<p>
+  Four interactive challenges inspired by the world of bid management.
+  Evaluate opportunities, uncover solicitation red flags, manage
+  compliance requirements, and balance competing resources.
+  Each game tests a different skill behind a successful pursuit.
+</p>
+           <ul>
+  <li>It's a Bid! — Make the Bid/No-Bid call</li>
+  <li>Red Flag Hunt — Uncover solicitation risks</li>
+  <li>Scope Creep — Build the compliance trail</li>
+  <li>Capacity Crunch — Balance competing resources</li>
+</ul>
             <div className="actions">
               <a
                 className="pill arcade-cta"
@@ -189,10 +190,10 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Play the arcade ↗
+                Explore all four games ↗
               </a>
               <span className="arcade-note">
-                About two minutes · No sign-in required
+                Four games · No sign-in required
               </span>
             </div>
           </div>
