@@ -54,9 +54,9 @@ export default function LessonsPage() {
           <div className="blog-feature-visual blog-wrestling-visual">
             <div className="blog-visual-top"><span>THE VISUAL ARGUMENT</span><span>EXHIBIT A ↘</span></div>
             <div className="blog-gif-poster">
-              <div className="blog-gif-sticker">MY FIRST INSTINCT:</div>
+              <div className="blog-gif-sticker">WHEN EVERY PROBLEM LOOKS LIKE A TABLE…</div>
               <div className="blog-gif-screen"><iframe title="Big Show with a table — the wrestling reference from the first blog post" src="https://tenor.com/embed/1549388650773727459" loading="lazy" allowFullScreen /></div>
-              <div className="blog-gif-headline">PUT IT IN<br/><em>A TABLE.</em></div>
+              <div className="blog-gif-headline">NOT EVERY IDEA<br/><em>NEEDS A TABLE.</em></div>
               <div className="blog-gif-footnote"><span>ACTUAL DESIGN PHILOSOPHY, CIRCA TOO MANY RFPs</span><span>↗</span></div>
             </div>
             <div className="blog-visual-bottom">LESSON 01 <span>SOMETIMES THE TABLE STAYS UNDER THE RING.</span></div>
