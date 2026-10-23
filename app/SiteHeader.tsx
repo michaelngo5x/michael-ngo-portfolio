@@ -6,13 +6,7 @@ export default function SiteHeader({ className = "" }: { className?: string }) {
       </a>
       <nav aria-label="Primary navigation">
         <a href="/#work">Work</a>
-        <a
-          href="https://bid-desk-arcade.michaelngo5x.chatgpt.site"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Arcade
-        </a>
+        <a href="/projects">Projects</a>
         <a href="/lessons">Lessons From the Bid Desk</a>
         <a href="/about">About</a>
         <a href="/resume">Career</a>
