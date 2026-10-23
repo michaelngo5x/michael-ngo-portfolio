@@ -12,8 +12,10 @@ export default function LessonsPage() {
     <main className="lessons-page blog-redesign" id="top">
       <SiteHeader />
       <div className="blog-masthead"><span>MICHAEL NGO / THE BLOG</span><span>LESSONS, OBSERVATIONS & WORKING IDEAS</span><span>EST. 2026</span></div>
+      <div className="blog-ticker" aria-label="Blog themes"><span>IDEAS WORTH KEEPING</span><b>✳</b><span>PROPOSAL DESIGN</span><b>✳</b><span>BAD JOKES, GOOD LESSONS</span><b>✳</b><span>THE HUMAN SIDE OF BID MANAGEMENT</span><b>✳</b><span>NOT EVERYTHING NEEDS TO BE A TABLE</span></div>
       <section className="blog-hero">
         <div className="blog-hero-copy">
+          <span className="blog-issue-stamp">THE BID DESK CHRONICLES <b>VOL. 01</b></span>
           <p className="eyebrow"><span className="blog-live-dot" /> Notes from the working world</p>
           <h1>Lessons from<br />the <em>Bid Desk.</em></h1>
           <p className="blog-hero-deck">Actual proposal lessons. <i>Questionable teaching devices.</i></p>
@@ -35,6 +37,7 @@ export default function LessonsPage() {
           </div>
           <span className="blog-pencil" aria-hidden="true" />
           <div className="blog-art-label" aria-hidden="true">THE DESK IS A WORK IN PROGRESS ↗</div>
+          <span className="blog-doodle blog-doodle-one" aria-hidden="true">✳</span><span className="blog-doodle blog-doodle-two" aria-hidden="true">↗</span>
         </div>
       </section>
 
@@ -48,12 +51,21 @@ export default function LessonsPage() {
             <p className="blog-feature-subline">Featuring practical examples, an interactive comparison, and a wrestling reference that probably made more sense in my head.</p>
             <a className="blog-read-link" href="/lessons/not-everything-needs-to-be-a-table">Read the full lesson <span>↗</span></a>
           </div>
-          <div className="blog-feature-visual">
-            <div className="blog-visual-top"><span>AN INTERACTIVE EXCERPT</span><span>TRY IT ↓</span></div>
-            <FormatSwitch />
-            <div className="blog-visual-bottom">LESSON 01 <span>INFORMATION → MEANING</span></div>
+          <div className="blog-feature-visual blog-wrestling-visual">
+            <div className="blog-visual-top"><span>THE VISUAL ARGUMENT</span><span>EXHIBIT A ↘</span></div>
+            <div className="blog-gif-poster">
+              <div className="blog-gif-sticker">MY FIRST INSTINCT:</div>
+              <div className="blog-gif-screen"><iframe title="Big Show with a table — the wrestling reference from the first blog post" src="https://tenor.com/embed/1549388650773727459" loading="lazy" allowFullScreen /></div>
+              <div className="blog-gif-headline">PUT IT IN<br/><em>A TABLE.</em></div>
+              <div className="blog-gif-footnote"><span>ACTUAL DESIGN PHILOSOPHY, CIRCA TOO MANY RFPs</span><span>↗</span></div>
+            </div>
+            <div className="blog-visual-bottom">LESSON 01 <span>SOMETIMES THE TABLE STAYS UNDER THE RING.</span></div>
           </div>
         </article>
+        <div className="blog-playground">
+          <div className="blog-playground-intro"><span className="blog-playground-label">↳ A LITTLE EXPERIMENT</span><h3>Same information.<br/><em>Different impact.</em></h3><p>The first essay is about how presentation changes understanding. Don&apos;t just take my word for it. Try switching between two ways of showing the exact same plan.</p><a href="/lessons/not-everything-needs-to-be-a-table">Go deeper into the lesson ↗</a></div>
+          <div className="blog-playground-widget"><FormatSwitch /><span className="blog-playground-scribble">GO ON, PRESS THE BUTTONS ↗</span></div>
+        </div>
         <div className="blog-bottom-grid">
           <div className="blog-up-next">
             <div className="blog-up-top"><span>ON THE WHITEBOARD</span><span>COMING NEXT</span></div>
