@@ -77,7 +77,7 @@ export default function Home() {
           number="02"
           label="Selected work"
           title="A closer look at how I work."
-          text="Three connected portfolio projects that make the strategy, systems, writing, and judgment behind my resume visible."
+          text="Two connected portfolio work samples that make the strategy, systems, writing, and judgment behind my resume visible."
         />
         <article className="project">
           <div>
@@ -165,39 +165,6 @@ export default function Home() {
               details are entirely fictional.
             </span>
           </div>
-        </article>
-        <article className="arcade-project" id="arcade">
-          <div className="arcade-copy">
-            <span className="flag">Interactive learning experience</span>
-           <p className="arcade-label">Bid Desk Arcade · Four Interactive Games</p>
-<h3>Pick a Mini-Game.</h3>
-<p>
-  Four interactive challenges inspired by the world of bid management.
-  Evaluate opportunities, uncover solicitation red flags, manage
-  compliance requirements, and balance competing resources.
-  Each game tests a different skill behind a successful pursuit.
-</p>
-           <ul>
-  <li>It's a Bid! — Make the Bid/No-Bid call</li>
-  <li>Red Flag Hunt — Uncover solicitation risks</li>
-  <li>Scope Creep — Build the compliance trail</li>
-  <li>Capacity Crunch — Balance competing resources</li>
-</ul>
-            <div className="actions">
-              <a
-                className="pill arcade-cta"
-                href="https://bid-desk-arcade.michaelngo5x.chatgpt.site"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Explore all four games ↗
-              </a>
-              <span className="arcade-note">
-                Four games · No sign-in required
-              </span>
-            </div>
-          </div>
-          <ArcadePreview />
         </article>
       </section>
 
@@ -472,26 +439,6 @@ function WorkSamplePreview() {
       <a href="/downloads/Michael-Ngo-Bid-Intelligence-Portfolio.xlsx" download>
         Open workbook ↗
       </a>
-    </div>
-  );
-}
-
-function ArcadePreview() {
-  return (
-    <div
-      className="arcade-preview"
-      aria-label="Preview of the Bid Desk Arcade"
-    >
-      <img
-        src="/images/bid-arcade-preview.png"
-        alt="Bid Desk Arcade featuring It's a Bid, Red Flag Hunt, Scope Creep, and Capacity Crunch"
-        style={{
-          display: "block",
-          width: "100%",
-          height: "auto",
-          borderRadius: "12px",
-        }}
-      />
     </div>
   );
 }
