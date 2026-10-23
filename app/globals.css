@@ -257,3 +257,37 @@
 @media(max-width:780px){.blog-redesign .blog-masthead span:nth-child(2){display:none}.blog-redesign .blog-hero{grid-template-columns:1fr}.blog-redesign .blog-hero-copy{padding:80px 24px 65px}.blog-redesign .blog-hero h1{font-size:clamp(58px,10vw,85px)}.blog-redesign .blog-desk-art{min-height:490px}.blog-redesign .blog-notebook{top:15%;left:20%;height:68%;width:61%}.blog-redesign .blog-bottom-grid{grid-template-columns:1fr}.blog-redesign .blog-outro{grid-template-columns:1fr;gap:20px}.blog-redesign .blog-outro>p{margin:0}.blog-redesign .blog-feature-copy h3{font-size:clamp(43px,8vw,70px)}}
 @media(max-width:520px){.blog-redesign .blog-hero h1{font-size:clamp(52px,11vw,65px)}.blog-redesign .blog-desk-art{min-height:410px}.blog-redesign .blog-notebook{min-height:280px;padding:24px 22px;left:16%;width:72%;top:15%;height:65%}.blog-redesign .blog-notebook-title{font-size:39px}.blog-redesign .blog-sticky-one{right:2%;top:4%;width:124px;height:115px;padding:12px}.blog-redesign .blog-sticky-two{left:1%;bottom:8%;width:125px;height:99px;padding:10px}.blog-redesign .blog-sticky strong{font-size:13px}.blog-redesign .blog-pencil{height:110px}.blog-redesign .blog-latest{padding:70px 24px}.blog-redesign .blog-section-heading{align-items:start;flex-direction:column}.blog-redesign .blog-feature-story{box-shadow:7px 7px 0 #eaf0f8}.blog-redesign .blog-feature-copy{padding:32px 24px}.blog-redesign .blog-feature-visual{padding:24px 15px}.blog-redesign .blog-demo-table{font-size:9px}.blog-redesign .blog-demo-table th,.blog-redesign .blog-demo-table td{padding:10px 5px}.blog-redesign .blog-format-stage{padding:18px 10px}.blog-redesign .blog-demo-timeline{gap:6px}.blog-redesign .blog-demo-step strong{font-size:10px}.blog-redesign .blog-demo-step div>span{font-size:9px}.blog-redesign .blog-format-caption{flex-wrap:wrap}.blog-redesign .blog-visual-top,.blog-redesign .blog-visual-bottom{font-size:8px}.blog-redesign .blog-up-next,.blog-redesign .blog-topic-board{padding:26px}.blog-redesign .blog-up-top{font-size:8px}.blog-redesign .blog-hero-actions{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.blog-redesign .blog-desk-art *,.blog-redesign .blog-primary-action,.blog-redesign .blog-read-link{transition:none!important}}
+
+
+/* Blog v2: playful zine-like editorial details */
+.blog-redesign .blog-ticker{display:flex;justify-content:space-between;align-items:center;gap:20px;white-space:nowrap;overflow:hidden;padding:13px clamp(24px,4vw,70px);background:#2e7bff;color:#fff;font-size:10px;font-weight:900;letter-spacing:.12em}
+.blog-redesign .blog-ticker b{font-size:18px;color:#cde0ff;font-weight:400}
+.blog-redesign .blog-issue-stamp{display:inline-flex;align-items:center;gap:12px;padding:9px 11px;border:1px solid #7c9bc6;color:#436d9f;transform:rotate(-2deg);font-size:9px;font-weight:900;letter-spacing:.11em;margin-bottom:22px;background:#edf4ff}
+.blog-redesign .blog-issue-stamp b{background:#10243d;color:#fff;padding:5px 7px}
+.blog-redesign .blog-doodle{position:absolute;z-index:2;color:#2e7bff;font-family:Georgia,serif;font-size:55px;text-shadow:2px 3px 0 #fff}
+.blog-redesign .blog-doodle-one{left:5%;top:8%;transform:rotate(-16deg)}
+.blog-redesign .blog-doodle-two{right:4%;top:48%;transform:rotate(17deg)}
+.blog-redesign .blog-wrestling-visual{background:radial-gradient(circle at 70% 25%,#2a4774,#0b1d34 65%);overflow:hidden}
+.blog-redesign .blog-gif-poster{position:relative;margin:28px 0 24px;transform:rotate(2deg);transition:transform .25s ease}
+.blog-redesign .blog-gif-poster:hover{transform:rotate(0deg) scale(1.015)}
+.blog-redesign .blog-gif-screen{height:clamp(230px,24vw,360px);border:9px solid #f4f0e8;background:#000;box-shadow:15px 15px 0 #2e7bff;overflow:hidden}
+.blog-redesign .blog-gif-screen iframe{display:block;width:100%;height:100%;border:0}
+.blog-redesign .blog-gif-sticker{position:absolute;top:-20px;left:-18px;z-index:2;background:#ffda66;color:#10243d;transform:rotate(-8deg);padding:13px 17px;font-size:12px;letter-spacing:.07em;font-weight:900;box-shadow:4px 5px 0 #10243d55}
+.blog-redesign .blog-gif-headline{font-size:clamp(52px,5.8vw,88px);font-weight:900;line-height:.91;letter-spacing:-.075em;margin:35px 0 23px;color:#fff;text-shadow:5px 5px 0 #2e7bff}
+.blog-redesign .blog-gif-headline em{font-family:Georgia,serif;font-weight:400;color:#ffda66;text-shadow:none}
+.blog-redesign .blog-gif-footnote{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #ffffff4d;padding-top:15px;font-size:10px;font-weight:900;letter-spacing:.08em;color:#a8c4eb}
+.blog-redesign .blog-gif-footnote span:last-child{font-size:20px;color:#ffda66}
+.blog-redesign .blog-playground{margin-top:64px;display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center;background:#ffedc3;padding:clamp(28px,5vw,70px);border:1px solid #e9c782;position:relative}
+.blog-redesign .blog-playground:before{content:"";position:absolute;top:-12px;left:32px;width:100px;height:20px;background:#2e7bff;transform:rotate(-5deg)}
+.blog-redesign .blog-playground-label{font-size:10px;letter-spacing:.14em;font-weight:900;color:#9c6318}
+.blog-redesign .blog-playground-intro h3{font-size:clamp(38px,3.8vw,59px);line-height:1.04;letter-spacing:-.06em;margin:22px 0}
+.blog-redesign .blog-playground-intro h3 em{font-family:Georgia,serif;color:#d17a1e;font-weight:400}
+.blog-redesign .blog-playground-intro p{font-size:15px;line-height:1.8;color:#715b42;max-width:420px}
+.blog-redesign .blog-playground-intro>a{display:inline-block;margin-top:18px;border-bottom:2px solid #a56a27;padding-bottom:7px;color:#825117;font-weight:800;font-size:12px}
+.blog-redesign .blog-playground-widget{min-width:0;position:relative}
+.blog-redesign .blog-playground-widget .blog-format-demo{margin:0;box-shadow:13px 13px 0 #d8a958}
+.blog-redesign .blog-playground-scribble{display:block;text-align:right;font-family:Georgia,serif;font-style:italic;font-size:15px;color:#9d6425;margin-top:27px;transform:rotate(-3deg)}
+@media(max-width:1120px){.blog-redesign .blog-playground{grid-template-columns:1fr;gap:25px}.blog-redesign .blog-playground-intro p{max-width:670px}.blog-redesign .blog-gif-screen{height:360px}}
+@media(max-width:780px){.blog-redesign .blog-ticker{justify-content:flex-start}.blog-redesign .blog-gif-screen{height:clamp(260px,55vw,420px)}.blog-redesign .blog-gif-headline{font-size:clamp(55px,10vw,84px)}}
+@media(max-width:520px){.blog-redesign .blog-ticker{gap:14px;font-size:9px}.blog-redesign .blog-issue-stamp{font-size:8px}.blog-redesign .blog-gif-screen{height:245px;border-width:6px;box-shadow:8px 8px 0 #2e7bff}.blog-redesign .blog-gif-sticker{font-size:9px;padding:10px}.blog-redesign .blog-gif-headline{font-size:55px}.blog-redesign .blog-playground{padding:35px 17px}.blog-redesign .blog-playground-intro h3{font-size:39px}.blog-redesign .blog-playground-scribble{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.blog-redesign .blog-gif-poster{transition:none!important}}
