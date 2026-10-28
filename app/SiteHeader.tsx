@@ -6,7 +6,7 @@ export default function SiteHeader({ className = "" }: { className?: string }) {
       </a>
       <nav aria-label="Primary navigation">
         <a href="/#work">Work</a>
-        <a href="/projects">Projects</a>
+        <a href="/projects">AI Apps</a>
         <a href="/lessons">Blog</a>
         <a href="/about">About</a>
         <a href="/resume">Career</a>
