@@ -11,15 +11,15 @@ export default function ProjectsPage() {
         <div className="world-orb orb-two" aria-hidden="true" />
         <div className="projects-intro">
           <span className="projects-kicker">MICHAEL NGO / INTERACTIVE WORKSPACE</span>
-          <h1 id="projects-heading"><span aria-hidden="true">▱</span> Projects<span className="blink">_</span></h1>
-          <p>Experiments, simulations, and playful ideas at the intersection of procurement, data, and creativity.</p>
-          <span className="projects-status"><i /> 02 EXPERIENCES · SELECT A PROJECT TO EXPLORE</span>
+          <h1 id="projects-heading"><span aria-hidden="true">▱</span> AI-Built Apps &amp; Experiments<span className="blink">_</span></h1>
+          <p>AI-assisted prototypes, interactive experiences, and practical workflow ideas. Explore what each app does, why I designed it, and how to try it.</p>
+          <span className="projects-status"><i /> 02 EXPERIENCES · CHOOSE AN APP TO EXPLORE</span>
         </div>
         <div className="experience-grid">
           <article className="experience-card lab-card">
             <div className="lab-heading"><span className="mini-led" /> SYSTEMS LAB <span className="lab-number">EXPERIMENT 001</span></div>
             <div className="lab-screen">
-              <div className="lab-screen-top"><span>OPPORTUNITY INTELLIGENCE</span><span>● ● ●</span></div>
+              <div className="lab-screen-top"><span>BID INBOX MANAGER</span><span>● ● ●</span></div>
               <div className="lab-data">
                 <div className="lab-chart" aria-hidden="true">
                   <span style={{height:"32%"}} /><span style={{height:"52%"}} /><span style={{height:"44%"}} /><span style={{height:"75%"}} /><span style={{height:"60%"}} /><span style={{height:"90%"}} /><span style={{height:"68%"}} />
@@ -30,10 +30,10 @@ export default function ProjectsPage() {
             </div>
             <div className="experience-copy">
               <div className="experience-eyebrow">ANALYZE / PRIORITIZE / DECIDE / ROUTE</div>
-              <h2>Opportunity<br /><em>Intelligence Lab</em></h2>
-              <p>Step into a fictional bid-intake command center. Explore explainable qualification, decision support, workflow routing, and preliminary valuation.</p>
+              <h2>Bid Inbox<br /><em>Manager Prototype</em></h2>
+              <p>Explore a fictional, cross-industry procurement inbox. Review notices, qualification rules, duplicate detection, human approvals, simulated routing, and illustrative planning values.</p>
               <div className="project-chips"><span>5-stage workflow</span><span>Human-in-the-loop</span><span>Interactive demo</span></div>
-              <a className="experience-action lab-action" href="/projects/opportunity-intelligence">ENTER THE LAB <span aria-hidden="true">↗</span></a>
+              <a className="experience-action lab-action" href="/projects/opportunity-intelligence">EXPLORE THE PROTOTYPE <span aria-hidden="true">↗</span></a>
               <small>Fictional examples and transparent rule-based logic. Not connected to live AI or employer systems.</small>
             </div>
           </article>
@@ -50,12 +50,12 @@ export default function ProjectsPage() {
               <div className="experience-eyebrow">FOUR GAMES / UNLIMITED RETRIES</div>
               <h2>Ready,<br /><em>bid, play.</em></h2>
               <p>Bid/no-bid calls, hidden red flags, changing requirements, and impossible capacity decisions. The procurement world, now with a high-score mentality.</p>
-              <a className="experience-action arcade-action" href="https://bid-desk-arcade.michaelngo5x.chatgpt.site" target="_blank" rel="noopener noreferrer">ENTER THE ARCADE <span aria-hidden="true">↗</span></a>
-              <small>Opens the existing four-game experience in a new tab.</small>
+              <a className="experience-action arcade-action" href="/projects/arcade">VIEW APP &amp; INSTRUCTIONS <span aria-hidden="true">↗</span></a>
+              <small>View the project brief, then launch the four-game arcade.</small>
             </div>
           </article>
         </div>
-        <div className="projects-outro"><span>◉ TWO WORLDS. ONE BID DESK.</span><a href="/#work">← BACK TO SELECTED WORK</a></div>
+        <div className="projects-outro"><span>◉ TWO EXPERIENCES. ONE CREATIVE WORKSPACE.</span><a href="/#work">← BACK TO SELECTED WORK</a></div>
       </section>
       <style>{`
         .projects-page{background:#080d1d;color:#eaf6ff;min-height:100vh}.projects-page .site-header{position:relative;z-index:5;background:#0c1325;color:#f1f6ff;border-bottom:1px solid #27304b}.projects-page .site-header a{color:inherit}
