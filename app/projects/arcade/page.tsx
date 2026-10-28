@@ -18,6 +18,14 @@ export default function ArcadeProjectPage() {
     <main className="arcade-detail-page">
       <SiteHeader />
       <div className="arcade-project-layout">
+        <details className="guide-toggle" open>
+          <summary><span className="when-open">Hide instructions ←</span><span className="when-closed">Show instructions →</span></summary>
+        <aside className="project-brief" aria-label="Project scope and instructions">
+          <span className="brief-kicker">PROJECT BRIEF / 002</span>
+          <h2>About this app</h2>
+          <section className="brief-section"><h3>Purpose</h3><p>Make procurement decision-making more approachable through short, interactive, consequence-based exercises.</p></section><section className="brief-section"><h3>Intended audience</h3><p>Proposal coordinators, bid managers, procurement professionals, and anyone curious about bid strategy.</p></section><section className="brief-section"><h3>How it works</h3><p>Four separate games present fictional dilemmas. Players choose responses and explore outcomes rather than work with live procurement records.</p></section><section className="brief-section"><h3>Try it yourself</h3><ol><li>Launch the arcade.</li><li>Select one of the four challenges.</li><li>Read the scenario and choose an action.</li><li>Review the result and replay to compare decisions.</li></ol></section><section className="brief-section"><h3>Prototype scope</h3><p>Independently conceived AI-assisted training experiment; not a production learning-management system or validated assessment.</p></section><section className="brief-section"><h3>What this demonstrates</h3><p>Process communication · Scenario design · Interactive learning · Procurement judgment · AI-assisted prototyping</p></section>
+        </aside>
+        </details>
         <section className="arcade-app" aria-labelledby="arcade-title">
           <a className="back" href="/projects">← AI-Built Apps & Experiments</a>
           <span className="eyebrow">AI-assisted interactive experiment / fictional scenarios</span>
@@ -29,16 +37,12 @@ export default function ArcadeProjectPage() {
           <a className="launch" href="https://bid-desk-arcade.michaelngo5x.chatgpt.site" target="_blank" rel="noopener noreferrer">Launch the interactive arcade ↗</a>
           <p className="external">The game opens in a new tab on its existing external host.</p>
         </section>
-        <aside className="project-brief" aria-label="Project scope and instructions">
-          <span className="brief-kicker">PROJECT BRIEF / 002</span>
-          <h2>About this app</h2>
-          <section className="brief-section"><h3>Purpose</h3><p>Make procurement decision-making more approachable through short, interactive, consequence-based exercises.</p></section><section className="brief-section"><h3>Intended audience</h3><p>Proposal coordinators, bid managers, procurement professionals, and anyone curious about bid strategy.</p></section><section className="brief-section"><h3>How it works</h3><p>Four separate games present fictional dilemmas. Players choose responses and explore outcomes rather than work with live procurement records.</p></section><section className="brief-section"><h3>Try it yourself</h3><ol><li>Launch the arcade.</li><li>Select one of the four challenges.</li><li>Read the scenario and choose an action.</li><li>Review the result and replay to compare decisions.</li></ol></section><section className="brief-section"><h3>Prototype scope</h3><p>Independently conceived AI-assisted training experiment; not a production learning-management system or validated assessment.</p></section><section className="brief-section"><h3>What this demonstrates</h3><p>Process communication · Scenario design · Interactive learning · Procurement judgment · AI-assisted prototyping</p></section>
-        </aside>
+
       </div>
       <style>{`
         .arcade-detail-page{min-height:100vh;background:radial-gradient(circle at 5% 10%,#26355d,transparent 40%),linear-gradient(140deg,#0b1024,#1e1034);color:#f5edff}
         .arcade-detail-page .site-header{background:#11162c;color:#fff;border-bottom:1px solid #39334f}
-        .arcade-project-layout{max-width:1480px;margin:auto;padding:42px clamp(18px,4vw,60px) 90px;display:grid;grid-template-columns:minmax(0,1fr) minmax(350px,390px);gap:32px;align-items:start}
+        .arcade-project-layout{max-width:1480px;margin:auto;padding:42px clamp(18px,4vw,60px) 90px;display:grid;grid-template-columns:minmax(350px,390px) minmax(0,1fr);gap:26px;align-items:start}
         .arcade-app{min-width:0}.arcade-app .back{display:inline-block;color:#d5b7ff;margin-bottom:25px;font-size:13px}
         .arcade-app .eyebrow{color:#ff8edc;letter-spacing:.13em;font-size:11px;font-weight:800;text-transform:uppercase}
         .arcade-app h1{font-size:clamp(42px,5vw,76px);margin:18px 0;line-height:1.08}.arcade-app h1 em{font-style:normal;color:#ff8edc}
@@ -47,11 +51,19 @@ export default function ArcadeProjectPage() {
         .game-grid article span{font-size:10px;letter-spacing:.13em;color:#f5a7e4}.game-grid h2{font-size:23px;margin:14px 0}.game-grid p{font-size:13px;color:#c6bfd3;line-height:1.65}
         .launch{display:inline-flex;padding:17px 22px;background:#ff70c8;color:#1a0a26;border-radius:12px;font-weight:800}
         .arcade-app .external{font-size:12px;margin-top:15px}
-        .project-brief{position:sticky;top:20px;padding:24px;border:1px solid #d9e1ed;border-radius:18px;background:#f7f9fc;color:#14233c;box-shadow:0 20px 55px #0006}
+        .project-brief{position:static;padding:24px;border:1px solid #d9e1ed;border-radius:18px;background:#f7f9fc;color:#14233c;box-shadow:0 20px 55px #0006}
         .brief-kicker{font-size:11px;color:#406a9f;letter-spacing:.11em;font-weight:800}.project-brief h2{font-size:27px;line-height:1.15;color:#14233c;margin:12px 0 22px}
         .project-brief h3{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#263d5e;margin:0 0 8px}
         .project-brief p,.project-brief li{font-size:13px;line-height:1.65;color:#33445e}.project-brief ol{padding-left:20px;margin:0}.project-brief .brief-section{border-radius:12px;padding:14px 16px;margin:0 0 10px;border:1px solid #e3e8f0;background:#fff}.project-brief .brief-section:nth-of-type(1){background:#eaf2fa}.project-brief .brief-section:nth-of-type(2){background:#edf6f1}.project-brief .brief-section:nth-of-type(3){background:#f0effa}.project-brief .brief-section:nth-of-type(4){background:#fcf5e9}.project-brief .brief-section:nth-of-type(5){background:#faf0f5}.project-brief .brief-section:nth-of-type(6){background:#eef1f5}.project-brief .brief-section p{margin:0}.project-brief .brief-section li+li{margin-top:5px}
-        @media(max-width:1050px){.arcade-project-layout{grid-template-columns:1fr}.project-brief{position:static}}
+        @media(max-width:1050px){.arcade-project-layout{grid-template-columns:1fr}.guide-toggle{grid-row:1}.arcade-app{grid-row:2}}
+        .guide-toggle{position:sticky;top:16px;align-self:start;min-width:0}
+        .guide-toggle>summary{display:block;list-style:none;cursor:pointer;background:#f1f5fb;color:#183450;border:1px solid #d9e1ed;border-radius:12px;padding:12px 17px;font-size:13px;font-weight:800;margin-bottom:9px;box-shadow:0 5px 20px #0002}
+        .guide-toggle>summary::-webkit-details-marker{display:none}
+        .guide-toggle>summary:focus-visible{outline:3px solid #ff70c8;outline-offset:3px}
+        .guide-toggle .when-closed{display:none}.guide-toggle:not([open]) .when-open{display:none}.guide-toggle:not([open]) .when-closed{display:inline}
+        .arcade-project-layout:has(.guide-toggle:not([open])){grid-template-columns:190px minmax(0,1fr)}
+        .guide-toggle:not([open])>summary{margin:0}
+        @media(max-width:1050px){.arcade-project-layout:has(.guide-toggle:not([open])){grid-template-columns:1fr}.guide-toggle{position:static}}
         @media(max-width:550px){.game-grid{grid-template-columns:1fr}}
       `}</style>
     </main>
