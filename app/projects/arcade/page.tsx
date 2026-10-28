@@ -15,7 +15,7 @@ const games = [
 
 export default function ArcadeProjectPage() {
   return (
-    <main className="arcade-project">
+    <main className="arcade-detail-page">
       <SiteHeader />
       <div className="arcade-project-layout">
         <section className="arcade-app" aria-labelledby="arcade-title">
@@ -36,10 +36,10 @@ export default function ArcadeProjectPage() {
         </aside>
       </div>
       <style>{`
-        .arcade-project{min-height:100vh;background:radial-gradient(circle at 5% 10%,#26355d,transparent 40%),linear-gradient(140deg,#0b1024,#1e1034);color:#f5edff}
-        .arcade-project .site-header{background:#11162c;color:#fff;border-bottom:1px solid #39334f}
-        .arcade-project-layout{max-width:1510px;margin:auto;padding:48px clamp(18px,4vw,60px) 90px;display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:30px;align-items:start}
-        .arcade-app{min-width:0}.arcade-app .back{display:inline-block;color:#d5b7ff;margin-bottom:40px;font-size:13px}
+        .arcade-detail-page{min-height:100vh;background:radial-gradient(circle at 5% 10%,#26355d,transparent 40%),linear-gradient(140deg,#0b1024,#1e1034);color:#f5edff}
+        .arcade-detail-page .site-header{background:#11162c;color:#fff;border-bottom:1px solid #39334f}
+        .arcade-project-layout{max-width:1480px;margin:auto;padding:42px clamp(18px,4vw,60px) 90px;display:grid;grid-template-columns:minmax(0,1fr) minmax(350px,390px);gap:32px;align-items:start}
+        .arcade-app{min-width:0}.arcade-app .back{display:inline-block;color:#d5b7ff;margin-bottom:25px;font-size:13px}
         .arcade-app .eyebrow{color:#ff8edc;letter-spacing:.13em;font-size:11px;font-weight:800;text-transform:uppercase}
         .arcade-app h1{font-size:clamp(42px,5vw,76px);margin:18px 0;line-height:1.08}.arcade-app h1 em{font-style:normal;color:#ff8edc}
         .arcade-app>p{max-width:710px;color:#b9b7d0;line-height:1.8}.game-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:35px 0}
@@ -47,10 +47,10 @@ export default function ArcadeProjectPage() {
         .game-grid article span{font-size:10px;letter-spacing:.13em;color:#f5a7e4}.game-grid h2{font-size:23px;margin:14px 0}.game-grid p{font-size:13px;color:#c6bfd3;line-height:1.65}
         .launch{display:inline-flex;padding:17px 22px;background:#ff70c8;color:#1a0a26;border-radius:12px;font-weight:800}
         .arcade-app .external{font-size:12px;margin-top:15px}
-        .project-brief{position:sticky;top:20px;padding:25px;border:1px solid #d9e1ed;border-radius:18px;background:#f7f9fc;color:#14233c;box-shadow:0 20px 55px #0006}
+        .project-brief{position:sticky;top:20px;padding:24px;border:1px solid #d9e1ed;border-radius:18px;background:#f7f9fc;color:#14233c;box-shadow:0 20px 55px #0006}
         .brief-kicker{font-size:11px;color:#406a9f;letter-spacing:.11em;font-weight:800}.project-brief h2{font-size:27px;line-height:1.15;color:#14233c;margin:12px 0 22px}
         .project-brief h3{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#263d5e;margin:0 0 8px}
-        .project-brief p,.project-brief li{font-size:13px;line-height:1.65;color:#33445e}.project-brief ol{padding-left:20px;margin:0}.project-brief .brief-section{border-radius:12px;padding:15px 16px;margin:0 0 11px;border:1px solid #e3e8f0;background:#fff}.project-brief .brief-section:nth-of-type(1){background:#eaf2fa}.project-brief .brief-section:nth-of-type(2){background:#edf6f1}.project-brief .brief-section:nth-of-type(3){background:#f0effa}.project-brief .brief-section:nth-of-type(4){background:#fcf5e9}.project-brief .brief-section:nth-of-type(5){background:#faf0f5}.project-brief .brief-section:nth-of-type(6){background:#eef1f5}.project-brief .brief-section p{margin:0}.project-brief .brief-section li+li{margin-top:5px}
+        .project-brief p,.project-brief li{font-size:13px;line-height:1.65;color:#33445e}.project-brief ol{padding-left:20px;margin:0}.project-brief .brief-section{border-radius:12px;padding:14px 16px;margin:0 0 10px;border:1px solid #e3e8f0;background:#fff}.project-brief .brief-section:nth-of-type(1){background:#eaf2fa}.project-brief .brief-section:nth-of-type(2){background:#edf6f1}.project-brief .brief-section:nth-of-type(3){background:#f0effa}.project-brief .brief-section:nth-of-type(4){background:#fcf5e9}.project-brief .brief-section:nth-of-type(5){background:#faf0f5}.project-brief .brief-section:nth-of-type(6){background:#eef1f5}.project-brief .brief-section p{margin:0}.project-brief .brief-section li+li{margin-top:5px}
         @media(max-width:1050px){.arcade-project-layout{grid-template-columns:1fr}.project-brief{position:static}}
         @media(max-width:550px){.game-grid{grid-template-columns:1fr}}
       `}</style>
