@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 };
 
 const documents = [
-  { number: "01", type: "CAREER PROFILE", title: "Professional Resume", detail: "Bid management, proposal development, procurement and analytical systems.", href: "/downloads/Michael-Ngo-Resume-2026.pdf", action: "Open resume", download: true },
-  { number: "02", type: "VERIFIED LEARNING", title: "Certification Portfolio", detail: "Professional development across procurement, project management, data and AI.", href: "/downloads/Michael-Ngo-Certification-Portfolio-2026.pdf", action: "Open credentials", download: true },
-  { number: "03", type: "WRITING & STRATEGY", title: "Proposal Writing Sample", detail: "An original fictional technical proposal demonstrating structure, compliance and communication.", href: "/downloads/Northstar-Facility-Partners-Fictional-Proposal-QTA-26-117.docx", action: "Open sample", download: true },
+  { number: "01", type: "CAREER PROFILE", title: "Professional Resume", detail: "Final 2026 proposal resume: RFx leadership, Salesforce workflow design, bid analytics and public-sector procurement.", href: "/downloads/Michael-Ngo-Resume-2026.pdf", action: "Open resume", download: true },
+  { number: "02", type: "VERIFIED LEARNING", title: "Certification Portfolio", detail: "13-page certification portfolio with supporting certificates and verification information.", href: "/downloads/Michael-Ngo-Certification-Portfolio-2026.pdf", action: "Open credentials", download: true },
+  { number: "03", type: "WRITING & STRATEGY", title: "Technical Proposal Sample", detail: "20-page Tidemark Civil infrastructure proposal: methodology, phasing, diagrams, utility conflict response and controlled technical procedure.", href: "/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf", action: "Open sample", download: true },
   { number: "04", type: "ANALYSIS", title: "Procurement Analysis", detail: "A fictional RFP analysis covering requirements, risks and bid/no-bid considerations.", href: "/downloads/Michael-Ngo-RFP-Procurement-Analysis-Portfolio-Sample.docx", action: "Open analysis", download: true },
 ];
 
@@ -41,7 +41,7 @@ export default function RecruiterPage() {
       </div>
     </section>
     <section className="recruiter-library" id="documents">
-      <div className="recruiter-section-head"><div><p className="recruiter-kicker">01 — READY TO REVIEW</p><h2>Your shortlist, <em>already organized.</em></h2></div><p>Four direct links. No account required. All work samples are original and fictional, with no employer-confidential information.</p></div>
+      <div className="recruiter-section-head"><div><p className="recruiter-kicker">01 — READY TO REVIEW</p><h2>Your shortlist, <em>already organized.</em></h2></div><p>Four direct links. No account required. The featured technical proposal and procurement case studies are fictional demonstration work; resume and certifications document real experience.</p></div>
       <div className="recruiter-doc-grid">{documents.map(doc=><article className="recruiter-doc" key={doc.number}>
         <div className="recruiter-doc-top"><span>{doc.number} / {doc.type}</span><span aria-hidden="true">↗</span></div>
         <div className="recruiter-doc-symbol" aria-hidden="true">{doc.number==="01"?"▤":doc.number==="02"?"✳":doc.number==="03"?"¶":"◈"}</div>
