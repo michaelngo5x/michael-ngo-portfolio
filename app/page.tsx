@@ -49,7 +49,7 @@ export default function Home() {
             <div className="career-shortcuts-grid">
               <a href="/downloads/Michael-Ngo-Resume-2026.pdf" target="_blank" rel="noopener noreferrer"><span>01 / PROFILE</span><strong>Resume</strong><i aria-hidden="true">↗</i></a>
               <a href="/downloads/Michael-Ngo-Certification-Portfolio-2026.pdf" target="_blank" rel="noopener noreferrer"><span>02 / CREDENTIALS</span><strong>Certifications</strong><i aria-hidden="true">↗</i></a>
-              <a href="/projects/qta-case-study"><span>03 / WRITING</span><strong>Writing samples</strong><i aria-hidden="true">↗</i></a>
+              <a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer"><span>03 / WRITING</span><strong>Writing samples</strong><i aria-hidden="true">↗</i></a>
               <a href="/recruiter"><span>04 / ALL MATERIALS</span><strong>Recruiter Desk</strong><i aria-hidden="true">↗</i></a>
             </div>
           </div>
@@ -204,6 +204,13 @@ export default function Home() {
         </article>
       </section>
 
+      <section className="technical-sample section" id="technical-writing">
+        <div className="work-showcase-intro">
+          <div className="work-showcase-topline"><span>FEATURED WRITING SAMPLE / NOVEMBER 2026</span><span>20-PAGE PDF ↗</span></div>
+          <div className="work-showcase-display"><div><span className="work-showcase-kicker">TIDEMARK CIVIL · FICTIONAL DEMONSTRATION</span><h2>Technical writing,<br/><em>with a delivery mindset.</em></h2><p style={{maxWidth:"680px",lineHeight:1.7,color:"#c2d5d3",marginTop:22}}>An original infrastructure proposal that connects technical methodology, construction phasing, pedestrian access, utility coordination and quality hold points. Appendix A demonstrates a controlled procedure for documenting and resolving a utility conflict.</p></div><a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer">Read the proposal <span aria-hidden="true">↗</span></a></div>
+          <div className="work-showcase-tracks"><span>01 / PROPOSAL STRATEGY</span><span>02 / TECHNICAL DIAGRAMS</span><span>03 / CONTROLLED PROCEDURE</span></div>
+        </div>
+      </section>
       <section className="case section" id="case-study">
         <p className="eyebrow">03 · Behind the work</p>
         <h2>Turning fragmented bid activity into a management system.</h2>
