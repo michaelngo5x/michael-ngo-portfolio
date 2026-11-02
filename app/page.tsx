@@ -45,12 +45,12 @@ export default function Home() {
             </a>
           </div>
           <div className="career-shortcuts" aria-label="Quick access to career materials">
-            <div className="career-shortcuts-label"><span>RECRUITER QUICK ACCESS</span><span>FOUR ESSENTIAL RESOURCES ↗</span></div>
+            <div className="career-shortcuts-label"><span>RECRUITER QUICK ACCESS</span><span>DOCUMENTS & SELECTED WORK ↗</span></div>
             <div className="career-shortcuts-grid">
               <a href="/downloads/Michael-Ngo-Resume-2026.pdf" target="_blank" rel="noopener noreferrer"><span>01 / PROFILE</span><strong>Resume</strong><i aria-hidden="true">↗</i></a>
               <a href="/downloads/Michael-Ngo-Certification-Portfolio-2026.pdf" target="_blank" rel="noopener noreferrer"><span>02 / CREDENTIALS</span><strong>Certifications</strong><i aria-hidden="true">↗</i></a>
               <a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer"><span>03 / WRITING</span><strong>Writing samples</strong><i aria-hidden="true">↗</i></a>
-              <a href="/recruiter"><span>04 / ALL MATERIALS</span><strong>Recruiter Desk</strong><i aria-hidden="true">↗</i></a>
+              <a href="/projects/bid-intelligence"><span>04 / INTERACTIVE</span><strong>Bid Intelligence</strong><i aria-hidden="true">↗</i></a>
             </div>
           </div>
           <div className="role-line">
@@ -106,18 +106,18 @@ export default function Home() {
       <section className="work section" id="work">
         <div className="work-showcase-intro">
           <div className="work-showcase-topline"><span>SELECTED WORK / 2026</span><span>INTERACTIVE PORTFOLIO ↘</span></div>
-          <div className="work-showcase-display"><div><span className="work-showcase-kicker">BEYOND THE RESUME</span><h2>Don't just read what I do.<br/><em>Explore what I build.</em></h2></div><a href="/recruiter">All recruiter materials <span aria-hidden="true">↗</span></a></div>
-          <div className="work-showcase-tracks"><span>01 / BID INTELLIGENCE</span><span>02 / PROCUREMENT CASE STUDY</span><span>03 / PROCESS DESIGN</span></div>
+          <div className="work-showcase-display"><div><span className="work-showcase-kicker">BEYOND THE RESUME</span><h2>Don't just read what I do.<br/><em>Explore what I build.</em></h2></div><a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer">Read technical proposal <span aria-hidden="true">↗</span></a></div>
+          <div className="work-showcase-tracks"><span>01 / BID INTELLIGENCE</span><span>02 / TIDEMARK CIVIL</span><span>03 / TECHNICAL WRITING</span></div>
         </div>
         <Heading
           number="02"
           label="Selected work"
           title="A closer look at how I work."
-          text="Two connected portfolio work samples that make the strategy, systems, writing, and judgment behind my resume visible."
+          text="Two complementary work samples demonstrating bid analytics, proposal strategy, and technical writing."
         />
         <article className="project">
           <div>
-            <span className="flag">Flagship work sample</span>
+            <span className="flag">Interactive analytics work sample</span>
             <h3>Bid Intelligence Portfolio</h3>
             <p>
               I created this fictional Excel portfolio sample to demonstrate how
@@ -146,67 +146,11 @@ export default function Home() {
           </div>
           <WorkSamplePreview />
         </article>
-        <article className="qta-project">
-          <div className="qta-intro">
-            <div>
-              <span className="flag">End-to-end procurement case study</span>
-              <h3>Queensboro Transit Authority</h3>
-            </div>
-            <div>
-              <p>
-                A completely fictional procurement package showing how I move
-                from solicitation requirements to structured analysis and a
-                responsive technical proposal.
-              </p>
-              <a className="pill dark qta-cta" href="/projects/qta-case-study">
-                Explore the complete case study ↗
-              </a>
-            </div>
-          </div>
-          <div className="qta-flow">
-            <DocumentCard
-              step="01"
-              type="Source document"
-              title="Fictional RFP"
-              text="A detailed public-sector solicitation for multi-site custodial and facility support services."
-              href="/downloads/Queensboro-Transit-Authority-Fictional-RFP-QTA-26-117.docx"
-            />
-            <DocumentCard
-              step="02"
-              type="Procurement update"
-              title="Addendum & Q&A"
-              text="Clarifications and revisions affecting scope, staffing, security clearances, bonding, and schedule."
-              href="/downloads/Queensboro-Transit-Authority-Fictional-Addendum-1-QTA-26-117.docx"
-            />
-            <DocumentCard
-              step="03"
-              type="My analysis"
-              title="RFP Procurement Analysis"
-              text="My structured review of requirements, risks, deadlines, compliance, strategy, and bid/no-bid considerations."
-              href="/downloads/Michael-Ngo-RFP-Procurement-Analysis-Portfolio-Sample.docx"
-            />
-            <DocumentCard
-              step="04"
-              type="Response document"
-              title="Technical Proposal"
-              text="A complete fictional technical response demonstrating solution design, visual communication, compliance, and evaluator-focused writing."
-              href="/downloads/Northstar-Facility-Partners-Fictional-Proposal-QTA-26-117.docx"
-              featured
-            />
-          </div>
-          <div className="qta-foot">
-            <strong>One opportunity. Four connected documents.</strong>
-            <span>
-              The agency, bidder, procurement, pricing, personnel, and operating
-              details are entirely fictional.
-            </span>
-          </div>
-        </article>
       </section>
 
       <section className="technical-sample section" id="technical-writing">
         <div className="work-showcase-intro">
-          <div className="work-showcase-topline"><span>FEATURED WRITING SAMPLE / NOVEMBER 2026</span><span>20-PAGE PDF ↗</span></div>
+          <div className="work-showcase-topline"><span>FEATURED TECHNICAL PROPOSAL / NOVEMBER 2026</span><span>20-PAGE PDF ↗</span></div>
           <div className="work-showcase-display"><div><span className="work-showcase-kicker">TIDEMARK CIVIL · FICTIONAL DEMONSTRATION</span><h2>Technical writing,<br/><em>with a delivery mindset.</em></h2><p style={{maxWidth:"680px",lineHeight:1.7,color:"#c2d5d3",marginTop:22}}>An original infrastructure proposal that connects technical methodology, construction phasing, pedestrian access, utility coordination and quality hold points. Appendix A demonstrates a controlled procedure for documenting and resolving a utility conflict.</p></div><a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer">Read the proposal <span aria-hidden="true">↗</span></a></div>
           <div className="work-showcase-tracks"><span>01 / PROPOSAL STRATEGY</span><span>02 / TECHNICAL DIAGRAMS</span><span>03 / CONTROLLED PROCEDURE</span></div>
         </div>
