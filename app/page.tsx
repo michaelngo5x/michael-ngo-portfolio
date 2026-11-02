@@ -44,6 +44,15 @@ export default function Home() {
               Download resume
             </a>
           </div>
+          <div className="career-shortcuts" aria-label="Quick access to career materials">
+            <div className="career-shortcuts-label"><span>RECRUITER QUICK ACCESS</span><span>FOUR ESSENTIAL RESOURCES ↗</span></div>
+            <div className="career-shortcuts-grid">
+              <a href="/downloads/Michael-Ngo-Resume-2026.pdf" target="_blank" rel="noopener noreferrer"><span>01 / PROFILE</span><strong>Resume</strong><i aria-hidden="true">↗</i></a>
+              <a href="/downloads/Michael-Ngo-Certification-Portfolio-2026.pdf" target="_blank" rel="noopener noreferrer"><span>02 / CREDENTIALS</span><strong>Certifications</strong><i aria-hidden="true">↗</i></a>
+              <a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer"><span>03 / WRITING</span><strong>Writing samples</strong><i aria-hidden="true">↗</i></a>
+              <a href="/recruiter"><span>04 / ALL MATERIALS</span><strong>Recruiter Desk</strong><i aria-hidden="true">↗</i></a>
+            </div>
+          </div>
           <div className="role-line">
             <span>Currently</span>
             <strong>Bid Manager at Quality Facility Solutions</strong>
@@ -61,6 +70,28 @@ export default function Home() {
         </div>
       </section>
 
+      <style>{`
+        .career-shortcuts{margin:32px 0 20px;padding:18px;border:1px solid #cbdedc;border-radius:16px;background:linear-gradient(145deg,#f8fffd,#e9f4f1);box-shadow:0 12px 34px #0c504311}
+        .career-shortcuts-label,.work-showcase-topline,.work-showcase-tracks{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:10px;letter-spacing:.14em;font-weight:800;color:#237a71}
+        .career-shortcuts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:15px}
+        .career-shortcuts-grid a{position:relative;display:flex;flex-direction:column;gap:8px;min-height:86px;padding:14px;border-radius:9px;background:#fff;border:1px solid #d5e5e1;text-decoration:none;color:#173b39;transition:transform .2s,box-shadow .2s}
+        .career-shortcuts-grid a:hover{transform:translateY(-3px);box-shadow:0 10px 22px #0c50431b}
+        .career-shortcuts-grid a span{font-size:9px;letter-spacing:.1em;color:#5b8982;font-weight:700}
+        .career-shortcuts-grid a strong{font-size:16px;letter-spacing:-.03em}
+        .career-shortcuts-grid a i{position:absolute;right:13px;bottom:13px;font-style:normal;color:#138d7c}
+        .work-showcase-intro{margin:0 0 45px;background:#081d2a;color:#f5f9f7;border-radius:22px;padding:clamp(24px,4vw,60px);overflow:hidden;position:relative}
+        .work-showcase-intro:after{content:"";position:absolute;right:-90px;top:-150px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,#2abda533,transparent 65%);pointer-events:none}
+        .work-showcase-topline,.work-showcase-tracks{color:#70c9bd;position:relative;z-index:1}
+        .work-showcase-display{display:flex;justify-content:space-between;align-items:end;gap:28px;position:relative;z-index:1;margin:45px 0 50px}
+        .work-showcase-kicker{font-size:11px;letter-spacing:.2em;color:#a0c7c3;font-weight:700}
+        .work-showcase-display h2{font-size:clamp(34px,5vw,70px);letter-spacing:-.06em;line-height:1.05;margin:18px 0 0;color:#fff}
+        .work-showcase-display h2 em{font-style:normal;color:#67dfc9}
+        .work-showcase-display>a{white-space:nowrap;color:#081d2a;background:#6ce0ca;border-radius:7px;padding:16px 20px;font-size:13px;font-weight:800;text-decoration:none}
+        .work-showcase-tracks{border-top:1px solid #ffffff33;padding-top:18px}
+        @media(max-width:700px){.work-showcase-display{display:block}.work-showcase-display>a{display:inline-block;margin-top:25px}.work-showcase-tracks{gap:10px}}
+        @media(max-width:430px){.career-shortcuts-grid{grid-template-columns:1fr}.career-shortcuts-grid a{min-height:70px}}
+        @media(prefers-reduced-motion:reduce){.career-shortcuts-grid a{transition:none}.career-shortcuts-grid a:hover{transform:none}}
+      `}</style>
       <section className="statement section">
         <p className="eyebrow">01 · What I bring</p>
         <h2>I work across the full pursuit lifecycle.</h2>
@@ -73,6 +104,11 @@ export default function Home() {
       </section>
 
       <section className="work section" id="work">
+        <div className="work-showcase-intro">
+          <div className="work-showcase-topline"><span>SELECTED WORK / 2026</span><span>INTERACTIVE PORTFOLIO ↘</span></div>
+          <div className="work-showcase-display"><div><span className="work-showcase-kicker">BEYOND THE RESUME</span><h2>Don't just read what I do.<br/><em>Explore what I build.</em></h2></div><a href="/recruiter">All recruiter materials <span aria-hidden="true">↗</span></a></div>
+          <div className="work-showcase-tracks"><span>01 / BID INTELLIGENCE</span><span>02 / PROCUREMENT CASE STUDY</span><span>03 / PROCESS DESIGN</span></div>
+        </div>
         <Heading
           number="02"
           label="Selected work"
@@ -168,6 +204,13 @@ export default function Home() {
         </article>
       </section>
 
+      <section className="technical-sample section" id="technical-writing">
+        <div className="work-showcase-intro">
+          <div className="work-showcase-topline"><span>FEATURED WRITING SAMPLE / NOVEMBER 2026</span><span>20-PAGE PDF ↗</span></div>
+          <div className="work-showcase-display"><div><span className="work-showcase-kicker">TIDEMARK CIVIL · FICTIONAL DEMONSTRATION</span><h2>Technical writing,<br/><em>with a delivery mindset.</em></h2><p style={{maxWidth:"680px",lineHeight:1.7,color:"#c2d5d3",marginTop:22}}>An original infrastructure proposal that connects technical methodology, construction phasing, pedestrian access, utility coordination and quality hold points. Appendix A demonstrates a controlled procedure for documenting and resolving a utility conflict.</p></div><a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer">Read the proposal <span aria-hidden="true">↗</span></a></div>
+          <div className="work-showcase-tracks"><span>01 / PROPOSAL STRATEGY</span><span>02 / TECHNICAL DIAGRAMS</span><span>03 / CONTROLLED PROCEDURE</span></div>
+        </div>
+      </section>
       <section className="case section" id="case-study">
         <p className="eyebrow">03 · Behind the work</p>
         <h2>Turning fragmented bid activity into a management system.</h2>
