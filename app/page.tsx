@@ -79,6 +79,29 @@ export default function Home() {
         .career-shortcuts-grid a span{font-size:9px;letter-spacing:.1em;color:#5b8982;font-weight:700}
         .career-shortcuts-grid a strong{font-size:16px;letter-spacing:-.03em}
         .career-shortcuts-grid a i{position:absolute;right:13px;bottom:13px;font-style:normal;color:#138d7c}
+        .tidemark-feature{display:grid;grid-template-columns:1.03fr 1fr;gap:clamp(20px,3vw,45px);align-items:stretch;background:#0b202e;border-radius:22px;padding:clamp(24px,4vw,48px);margin:0 0 46px;color:#f6fbfa;box-shadow:0 18px 42px #0b26331c}
+        .tidemark-feature-label{font-size:10px;letter-spacing:.17em;color:#b9e967;font-weight:800}
+        .tidemark-feature-copy h3{font-size:clamp(34px,4.3vw,60px);letter-spacing:-.055em;line-height:1.03;margin:18px 0 20px;color:#fff}
+        .tidemark-feature-copy h3 em{font-style:normal;color:#d4f26b}
+        .tidemark-feature-copy p{font-size:15px;line-height:1.75;color:#c4d6dc;max-width:600px}
+        .tidemark-feature-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0}
+        .tidemark-feature-tags span{border:1px solid #54737a;border-radius:50px;padding:7px 10px;font-size:11px;color:#e4f1ed}
+        .tidemark-feature-action{display:inline-flex;align-items:center;gap:24px;background:#d4f26b;color:#0b202e;padding:15px 20px;border-radius:7px;font-size:13px;font-weight:850;text-decoration:none}
+        .tidemark-feature-action:hover,.tidemark-feature-action:focus-visible{background:#e6ff98;transform:translateY(-2px)}
+        .tidemark-feature-copy small{display:block;margin-top:17px;font-size:11px;color:#a6c0c3;line-height:1.5}
+        .tidemark-feature-visual{display:flex;flex-direction:column;justify-content:space-between;min-height:380px;padding:clamp(20px,3vw,32px);border:1px solid #527884;border-radius:14px;background:radial-gradient(circle at 70% 20%,#214c56 0,transparent 54%),#081823;color:#fff;text-decoration:none;overflow:hidden}
+        .tidemark-feature-visual:hover,.tidemark-feature-visual:focus-visible{border-color:#d4f26b;box-shadow:0 0 0 3px #d4f26b30}
+        .tidemark-visual-top,.tidemark-visual-foot{display:flex;justify-content:space-between;gap:8px;font-size:10px;font-weight:800;letter-spacing:.14em;color:#b6d6d5}
+        .tidemark-feature-visual>strong{font-size:clamp(27px,3vw,43px);line-height:1.08;letter-spacing:-.055em;margin:25px 0}
+        .tidemark-feature-visual>strong i{font-style:normal;color:#d4f26b}
+        .tidemark-visual-grid{display:grid;grid-template-columns:1fr .7fr 1fr;gap:5px;margin:0 0 22px}
+        .tidemark-visual-grid span{font-size:8px;letter-spacing:.07em;color:#c1d8dc;text-align:center}
+        .tidemark-visual-grid span:first-child{color:#6bc4fa}.tidemark-visual-grid span:last-of-type{color:#ffb26f}
+        .tidemark-visual-grid b{padding:9px 6px;border:1px solid #365969;border-radius:5px;font-size:10px;font-weight:650;background:#133142}
+        .tidemark-visual-grid b:nth-child(3n+2){text-align:center;background:#20333d}
+        .tidemark-visual-grid b:nth-child(3n){border-color:#8a613f}
+        @media(max-width:900px){.tidemark-feature{grid-template-columns:1fr}.tidemark-feature-visual{min-height:320px}}
+        @media(max-width:430px){.tidemark-feature-visual{padding:15px}.tidemark-visual-grid b{font-size:8px}.tidemark-feature-copy h3{font-size:36px}}
         .work-showcase-intro{margin:0 0 45px;background:#081d2a;color:#f5f9f7;border-radius:22px;padding:clamp(24px,4vw,60px);overflow:hidden;position:relative}
         .work-showcase-intro:after{content:"";position:absolute;right:-90px;top:-150px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,#2abda533,transparent 65%);pointer-events:none}
         .work-showcase-topline,.work-showcase-tracks{color:#70c9bd;position:relative;z-index:1}
@@ -115,6 +138,22 @@ export default function Home() {
           title="A closer look at how I work."
           text="Two complementary work samples demonstrating bid analytics, proposal strategy, and technical writing."
         />
+        <article className="tidemark-feature" aria-labelledby="tidemark-feature-title">
+          <div className="tidemark-feature-copy">
+            <span className="tidemark-feature-label">FLAGSHIP INTERACTIVE CASE STUDY · 2026</span>
+            <h3 id="tidemark-feature-title">One project.<br/><em>Two perspectives.</em></h3>
+            <p>Explore a complete fictional public-sector infrastructure procurement from both sides: the agency issuing the RFP and the contractor responding to it. Follow the requirements, addenda, technical proposal, estimating model, best-value evaluation, and conditional award.</p>
+            <div className="tidemark-feature-tags"><span>RFP development</span><span>Proposal management</span><span>Technical writing</span><span>Best-value evaluation</span></div>
+            <a className="tidemark-feature-action" href="https://tidemark-civil.vercel.app/" target="_blank" rel="noopener noreferrer">Explore Tidemark Civil <span aria-hidden="true">↗</span></a>
+            <small>Independent fictional portfolio demonstration · No real procurement or executed award</small>
+          </div>
+          <a className="tidemark-feature-visual" href="https://tidemark-civil.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Tidemark Civil interactive case study">
+            <span className="tidemark-visual-top">TIDEMARK CIVIL <span>RC—27—01</span></span>
+            <strong>ONE PROJECT.<br/><i>TWO</i> PERSPECTIVES.</strong>
+            <div className="tidemark-visual-grid"><span>PROCUREMENT AGENCY</span><span>CHRONOLOGY</span><span>TIDEMARK CIVIL</span><b>RFP issued</b><b>01 / 08</b><b>Bid / no-bid</b><b>Addendum 01</b><b>03 / 08</b><b>Utility response</b><b>Proposal received</b><b>06 / 08</b><b>Proposal submitted</b></div>
+            <span className="tidemark-visual-foot">INTERACTIVE PROCUREMENT LIFECYCLE ↗</span>
+          </a>
+        </article>
         <article className="project">
           <div>
             <span className="flag">Interactive analytics work sample</span>
