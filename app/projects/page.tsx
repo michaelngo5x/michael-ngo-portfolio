@@ -69,7 +69,7 @@ export default function ProjectsPage() {
             </div>
             <div className="experience-copy arcade-copy">
               <div className="experience-eyebrow">FOUR GAMES / UNLIMITED RETRIES</div>
-              <h2>Ready,<br /><em>bid, play.</em></h2>
+              <h2>Bid Management<br /><em>Arcade</em></h2>
               <p>Bid/no-bid calls, hidden red flags, changing requirements, and impossible capacity decisions. The procurement world, now with a high-score mentality.</p><div className="project-chips"><span>4 interactive games</span><span>Bid strategy</span><span>Scenario practice</span></div>
               <a className="experience-action arcade-action" href="/projects/arcade">VIEW APP &amp; INSTRUCTIONS <span aria-hidden="true">↗</span></a>
               <small>View the project brief, then launch the four-game arcade.</small>
@@ -162,6 +162,10 @@ export default function ProjectsPage() {
         .projects-author .author-avatar{display:block;width:88px;height:88px;flex:0 0 88px;object-fit:cover;object-position:center 25%;border-radius:15px;border:1px solid #81a4a4;background:#243e45}
         .projects-intro{margin-bottom:46px}
         @media(max-width:700px){.projects-author{max-width:530px;margin-bottom:32px}.projects-author .author-avatar{width:70px;height:70px;flex-basis:70px}.projects-author .author-label{font-size:10px}}
+        /* Ensure the navigation header has strong contrast on this dark page. */
+        .projects-page .site-header{background:#101d2e!important;color:#f5f8ff!important;border-bottom:1px solid #34455e!important}
+        .projects-page .site-header a,.projects-page .site-header nav a{color:#f5f8ff!important}
+        .projects-page .site-header a:hover{color:#7de5f3!important}
         @media(prefers-reduced-motion:reduce){.experience-card,.experience-action{transition:none}.blink,.cursor{animation:none}}
       `}</style>
     </main>
