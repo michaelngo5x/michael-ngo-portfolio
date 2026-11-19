@@ -9,6 +9,7 @@ export default function ProjectsPage() {
       <section className="projects-world" aria-labelledby="projects-heading">
         <div className="world-orb orb-one" aria-hidden="true" />
         <div className="world-orb orb-two" aria-hidden="true" />
+        <div className="projects-author"><img className="author-avatar" src="/images/michael-ngo.jpg" alt="Portrait of Michael Ngo" /><div><span className="author-label">DESIGNED &amp; DEVELOPED BY</span><strong>Michael Ngo</strong><p>Procurement · Proposal Management · Technical Writing</p><a href="/#about">About the author ↗</a></div></div>
         <div className="projects-intro">
           <span className="projects-kicker">MICHAEL NGO / INTERACTIVE WORKSPACE</span>
           <h1 id="projects-heading"><span aria-hidden="true">▱</span> Projects &amp; Interactive Work<span className="blink">_</span></h1>
@@ -75,7 +76,7 @@ export default function ProjectsPage() {
             </div>
           </article>
         </div>
-        <div className="projects-author"><div className="author-avatar" aria-hidden="true">MN</div><div><span className="author-label">DESIGNED &amp; DEVELOPED BY</span><strong>Michael Ngo</strong><p>Procurement · Proposal Management · Technical Writing</p><a href="/#about">About the author ↗</a></div></div>
+        
         <div className="projects-outro"><span>◉ THREE EXPERIENCES. ONE CREATIVE WORKSPACE.</span><a href="/#work">← BACK TO SELECTED WORK</a></div>
       </section>
       <style>{`
@@ -157,6 +158,10 @@ export default function ProjectsPage() {
         .projects-author a{color:#a2f4d9;text-decoration:none;font-weight:800;font-size:14px}
         .projects-author a:hover{text-decoration:underline}
         @media(max-width:700px){.tidemark-visual{height:auto;min-height:260px}.lab-card .lab-screen{height:227px}.arcade-card .cabinet{height:196px}.experience-copy h2{min-height:0}.experience-copy .project-chips{margin-top:12px;min-height:0}.projects-author{margin-top:25px;padding:18px}.author-avatar{width:60px;height:60px;flex-basis:60px}.projects-author strong{font-size:22px}}
+        .projects-author{max-width:820px;margin:0 auto 42px;position:relative;z-index:1;padding:18px 23px;box-shadow:0 14px 45px #0005}
+        .projects-author .author-avatar{display:block;width:88px;height:88px;flex:0 0 88px;object-fit:cover;object-position:center 25%;border-radius:15px;border:1px solid #81a4a4;background:#243e45}
+        .projects-intro{margin-bottom:46px}
+        @media(max-width:700px){.projects-author{max-width:530px;margin-bottom:32px}.projects-author .author-avatar{width:70px;height:70px;flex-basis:70px}.projects-author .author-label{font-size:10px}}
         @media(prefers-reduced-motion:reduce){.experience-card,.experience-action{transition:none}.blink,.cursor{animation:none}}
       `}</style>
     </main>
