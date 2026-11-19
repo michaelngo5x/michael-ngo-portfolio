@@ -21,15 +21,15 @@ export default function ProjectsPage() {
             <div className="tidemark-visual" aria-hidden="true">
               <div className="tidemark-topline"><span>PROJECT 001</span><span>CASE STUDY</span></div>
               <div className="tidemark-title">TIDEMARK <span>CIVIL</span></div>
-              <div className="tidemark-subtitle">ONE PROJECT. TWO PERSPECTIVES.</div>
+              <div className="tidemark-subtitle">THE FULL BID LIFECYCLE · TWO SIDES, ONE PROJECT.</div>
               <div className="tidemark-perspectives"><span>01 / PROCUREMENT AGENCY</span><span>02 / BIDDER</span></div>
-              <div className="tidemark-flow"><span>RFP DEVELOPMENT</span><b>→</b><span>TECHNICAL PROPOSAL</span><b>→</b><span>EVALUATION &amp; AWARD</span></div>
+              <div className="tidemark-flow"><span>RFP &amp; ADDENDA</span><b>→</b><span>BID &amp; PROPOSAL</span><b>→</b><span>EVALUATION &amp; AWARD</span></div>
             </div>
             <div className="experience-copy tidemark-copy">
               <div className="experience-eyebrow">PROCUREMENT / PROPOSALS / TECHNICAL WRITING</div>
               <h2>Tidemark Civil<br /><em>One Project. Two Perspectives.</em></h2>
-              <p>An interactive public-sector procurement case study following a fictional infrastructure project from both sides: the agency developing and evaluating an RFP, and the bidder preparing a compliant technical proposal.</p>
-              <div className="project-chips"><span>RFP development</span><span>Proposal management</span><span>Technical writing</span><span>Interactive case study</span></div>
+              <p>Explore the full bid lifecycle—from RFP development and bid/no-bid decisions to technical proposal submission, evaluation, and award. Follow the Procurement Agency and Bidder side by side through the same fictional infrastructure procurement.</p>
+              <div className="project-chips"><span>Full bid lifecycle</span><span>Agency + bidder views</span><span>Technical proposal</span></div>
               <a className="experience-action tidemark-action" href="https://tidemark-civil.vercel.app" target="_blank" rel="noopener noreferrer">EXPLORE THE CASE STUDY <span aria-hidden="true">↗</span></a>
               <small>Original fictional portfolio project. Opens the interactive experience in a new tab.</small>
             </div>
@@ -69,12 +69,13 @@ export default function ProjectsPage() {
             <div className="experience-copy arcade-copy">
               <div className="experience-eyebrow">FOUR GAMES / UNLIMITED RETRIES</div>
               <h2>Ready,<br /><em>bid, play.</em></h2>
-              <p>Bid/no-bid calls, hidden red flags, changing requirements, and impossible capacity decisions. The procurement world, now with a high-score mentality.</p>
+              <p>Bid/no-bid calls, hidden red flags, changing requirements, and impossible capacity decisions. The procurement world, now with a high-score mentality.</p><div className="project-chips"><span>4 interactive games</span><span>Bid strategy</span><span>Scenario practice</span></div>
               <a className="experience-action arcade-action" href="/projects/arcade">VIEW APP &amp; INSTRUCTIONS <span aria-hidden="true">↗</span></a>
               <small>View the project brief, then launch the four-game arcade.</small>
             </div>
           </article>
         </div>
+        <div className="projects-author"><div className="author-avatar" aria-hidden="true">MN</div><div><span className="author-label">DESIGNED &amp; DEVELOPED BY</span><strong>Michael Ngo</strong><p>Procurement · Proposal Management · Technical Writing</p><a href="/#about">About the author ↗</a></div></div>
         <div className="projects-outro"><span>◉ THREE EXPERIENCES. ONE CREATIVE WORKSPACE.</span><a href="/#work">← BACK TO SELECTED WORK</a></div>
       </section>
       <style>{`
@@ -130,6 +131,32 @@ export default function ProjectsPage() {
         @media(max-width:1050px){.experience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tidemark-card{grid-column:auto}.tidemark-visual{min-height:270px}.experience-copy h2{font-size:35px}}
         @media(max-width:700px){.experience-grid{grid-template-columns:1fr;max-width:530px}.tidemark-card{grid-column:auto}.tidemark-visual{min-height:265px}.projects-world{padding-top:55px}.projects-intro{margin-bottom:40px}.experience-copy h2{font-size:36px}}
         @media(max-width:520px){.tidemark-visual{padding:24px 19px;min-height:255px}.tidemark-title{font-size:39px}.tidemark-copy{padding:25px 22px}.experience-copy{padding:25px 22px}.tidemark-perspectives span{font-size:9px}.tidemark-flow{font-size:7px}.featured-sticker{font-size:9px}}
+
+        /* Shared card rhythm: matching visual heights, content flow, aligned calls to action. */
+        .experience-grid{align-items:stretch}
+        .experience-card{height:100%}
+        .tidemark-visual{height:272px;min-height:272px;box-sizing:border-box}
+        .lab-card .lab-heading{height:45px;box-sizing:border-box;padding-top:18px;padding-bottom:7px}
+        .lab-card .lab-screen{height:227px;box-sizing:border-box;flex-shrink:0}
+        .arcade-card .arcade-marquee{height:76px;min-height:76px;box-sizing:border-box}
+        .arcade-card .cabinet{height:196px;box-sizing:border-box;overflow:hidden}
+        .arcade-card .cabinet-screen{height:145px;box-sizing:border-box}
+        .arcade-card .game-screen-content{margin:6px auto;padding:5px 10px}
+        .arcade-card .game-option{padding:2px}
+        .experience-copy{flex:1;display:flex;flex-direction:column;gap:0}
+        .experience-copy h2{min-height:82px;margin-bottom:12px}
+        .experience-copy p{margin-bottom:16px}
+        .experience-copy .project-chips{margin-top:auto;margin-bottom:18px;min-height:54px;align-content:start}
+        .experience-copy .experience-action{margin-top:0}
+        .experience-copy small{display:block;margin-top:12px;min-height:33px}
+        .projects-author{max-width:1460px;margin:30px auto 0;padding:22px 27px;display:flex;align-items:center;gap:19px;border:1px solid #628b92;border-radius:21px;background:linear-gradient(110deg,#0c2630,#0b1b2a 65%,#112637);box-shadow:0 12px 35px #0004}
+        .author-avatar{width:77px;height:77px;flex:0 0 77px;display:grid;place-items:center;border-radius:16px;background:linear-gradient(140deg,#215369,#173044);border:1px solid #73969d;color:#e1f9ff;font-weight:900;font-size:25px;letter-spacing:-.06em}
+        .projects-author .author-label{display:block;color:#81dfe0;font-weight:900;font-size:12px;letter-spacing:.13em}
+        .projects-author strong{display:block;color:#fff;font-size:26px;line-height:1.2;margin:5px 0}
+        .projects-author p{color:#c3d9e5;font-size:14px;margin:0 0 7px}
+        .projects-author a{color:#a2f4d9;text-decoration:none;font-weight:800;font-size:14px}
+        .projects-author a:hover{text-decoration:underline}
+        @media(max-width:700px){.tidemark-visual{height:auto;min-height:260px}.lab-card .lab-screen{height:227px}.arcade-card .cabinet{height:196px}.experience-copy h2{min-height:0}.experience-copy .project-chips{margin-top:12px;min-height:0}.projects-author{margin-top:25px;padding:18px}.author-avatar{width:60px;height:60px;flex-basis:60px}.projects-author strong{font-size:22px}}
         @media(prefers-reduced-motion:reduce){.experience-card,.experience-action{transition:none}.blink,.cursor{animation:none}}
       `}</style>
     </main>
