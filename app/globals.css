@@ -291,3 +291,7 @@
 @media(max-width:780px){.blog-redesign .blog-ticker{justify-content:flex-start}.blog-redesign .blog-gif-screen{height:clamp(260px,55vw,420px)}.blog-redesign .blog-gif-headline{font-size:clamp(55px,10vw,84px)}}
 @media(max-width:520px){.blog-redesign .blog-ticker{gap:14px;font-size:9px}.blog-redesign .blog-issue-stamp{font-size:8px}.blog-redesign .blog-gif-screen{height:245px;border-width:6px;box-shadow:8px 8px 0 #2e7bff}.blog-redesign .blog-gif-sticker{font-size:9px;padding:10px}.blog-redesign .blog-gif-headline{font-size:55px}.blog-redesign .blog-playground{padding:35px 17px}.blog-redesign .blog-playground-intro h3{font-size:39px}.blog-redesign .blog-playground-scribble{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.blog-redesign .blog-gif-poster{transition:none!important}}
+
+/* Shared navigation portrait: circular replacement for MN monogram */
+.site-header .brand-avatar{display:block;width:34px;height:34px;flex:0 0 34px;border-radius:50%;overflow:hidden;background:#07182c}
+.site-header .brand-avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 34%}
