@@ -47,9 +47,9 @@ export default function Home() {
           <div className="career-shortcuts" aria-label="Quick access to career materials">
             <div className="career-shortcuts-label"><span>RECRUITER QUICK ACCESS</span><span>DOCUMENTS & SELECTED WORK ↗</span></div>
             <div className="career-shortcuts-grid">
-              <a href="/downloads/Michael-Ngo-Resume-2026.pdf" target="_blank" rel="noopener noreferrer"><span>01 / PROFILE</span><strong>Resume</strong><i aria-hidden="true">↗</i></a>
+              <a href="/downloads/Michael%20Ngo%20-%20Proposal%20Resume%20-%202026.pdf" target="_blank" rel="noopener noreferrer"><span>01 / PROFILE</span><strong>Resume</strong><i aria-hidden="true">↗</i></a>
               <a href="/downloads/Michael-Ngo-Certification-Portfolio-2026.pdf" target="_blank" rel="noopener noreferrer"><span>02 / CREDENTIALS</span><strong>Certifications</strong><i aria-hidden="true">↗</i></a>
-              <a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer"><span>03 / WRITING</span><strong>Writing samples</strong><i aria-hidden="true">↗</i></a>
+              <a href="/downloads/Michael%20Ngo%20-%20Technical%20Proposal%20Sample%20-%20Tidemark%20Civil%20-%20Technical%20Proposal.pdf" target="_blank" rel="noopener noreferrer"><span>03 / WRITING</span><strong>Writing samples</strong><i aria-hidden="true">↗</i></a>
               <a href="/projects/bid-intelligence"><span>04 / INTERACTIVE</span><strong>Bid Intelligence</strong><i aria-hidden="true">↗</i></a>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
       <section className="work section" id="work">
         <div className="work-showcase-intro">
           <div className="work-showcase-topline"><span>SELECTED WORK / 2026</span><span>INTERACTIVE PORTFOLIO ↘</span></div>
-          <div className="work-showcase-display"><div><span className="work-showcase-kicker">BEYOND THE RESUME</span><h2>Don't just read what I do.<br/><em>Explore what I build.</em></h2></div><a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer">Read technical proposal <span aria-hidden="true">↗</span></a></div>
+          <div className="work-showcase-display"><div><span className="work-showcase-kicker">BEYOND THE RESUME</span><h2>Don't just read what I do.<br/><em>Explore what I build.</em></h2></div><a href="/downloads/Michael%20Ngo%20-%20Technical%20Proposal%20Sample%20-%20Tidemark%20Civil%20-%20Technical%20Proposal.pdf" target="_blank" rel="noopener noreferrer">Read technical proposal <span aria-hidden="true">↗</span></a></div>
           <div className="work-showcase-tracks"><span>01 / BID INTELLIGENCE</span><span>02 / TIDEMARK CIVIL</span><span>03 / TECHNICAL WRITING</span></div>
         </div>
         <Heading
@@ -190,7 +190,7 @@ export default function Home() {
       <section className="technical-sample section" id="technical-writing">
         <div className="work-showcase-intro">
           <div className="work-showcase-topline"><span>FEATURED TECHNICAL PROPOSAL / NOVEMBER 2026</span><span>20-PAGE PDF ↗</span></div>
-          <div className="work-showcase-display"><div><span className="work-showcase-kicker">TIDEMARK CIVIL · FICTIONAL DEMONSTRATION</span><h2>Technical writing,<br/><em>with a delivery mindset.</em></h2><p style={{maxWidth:"680px",lineHeight:1.7,color:"#c2d5d3",marginTop:22}}>An original infrastructure proposal that connects technical methodology, construction phasing, pedestrian access, utility coordination and quality hold points. Appendix A demonstrates a controlled procedure for documenting and resolving a utility conflict.</p></div><a href="/downloads/Michael-Ngo-Technical-Proposal-Sample-2026.pdf" target="_blank" rel="noopener noreferrer">Read the proposal <span aria-hidden="true">↗</span></a></div>
+          <div className="work-showcase-display"><div><span className="work-showcase-kicker">TIDEMARK CIVIL · FICTIONAL DEMONSTRATION</span><h2>Technical writing,<br/><em>with a delivery mindset.</em></h2><p style={{maxWidth:"680px",lineHeight:1.7,color:"#c2d5d3",marginTop:22}}>An original infrastructure proposal that connects technical methodology, construction phasing, pedestrian access, utility coordination and quality hold points. Appendix A demonstrates a controlled procedure for documenting and resolving a utility conflict.</p></div><a href="/downloads/Michael%20Ngo%20-%20Technical%20Proposal%20Sample%20-%20Tidemark%20Civil%20-%20Technical%20Proposal.pdf" target="_blank" rel="noopener noreferrer">Read the proposal <span aria-hidden="true">↗</span></a></div>
           <div className="work-showcase-tracks"><span>01 / PROPOSAL STRATEGY</span><span>02 / TECHNICAL DIAGRAMS</span><span>03 / CONTROLLED PROCEDURE</span></div>
         </div>
       </section>
