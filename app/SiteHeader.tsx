@@ -2,7 +2,7 @@ export default function SiteHeader({ className = "" }: { className?: string }) {
   return (
     <header className={`project-nav site-header ${className}`}>
       <a className="brand" href="/">
-        <b>MN</b>Michael Ngo
+        <span className="brand-avatar"><img src="/images/michael-ngo.jpg" alt="" /></span>Michael Ngo
       </a>
       <nav aria-label="Primary navigation">
         <a href="/#work">Work</a>
